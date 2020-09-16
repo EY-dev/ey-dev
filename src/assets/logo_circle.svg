@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="logo_circle.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 512 512.00004"
+   height="512"
+   width="512">
+  <defs
+     id="defs2">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     units="px"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1027"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="419.87115"
+     inkscape:cx="-216.35218"
+     inkscape:zoom="0.7"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(495.63693,184.94047)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Слой 1">
+    <g
+       transform="matrix(3.7795278,0,0,3.7795278,666.07746,-197.51194)"
+       id="g1115">
+      <circle
+         r="67.73333"
+         cy="71.059532"
+         cx="-239.63692"
+         id="path949-9"
+         style="fill:#0e1526;fill-opacity:1;stroke-width:0.179284;stroke-opacity:0" />
+      <g
+         transform="matrix(0.79999999,0,0,0.79999999,-293.82357,20.107386)"
+         id="g995-5">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="22.663219"
+           y="108.51224"
+           id="text848-222"><tspan
+             sodipodi:role="line"
+             id="tspan846-0"
+             x="22.663219"
+             y="108.51224"
+             style="font-size:25.4px;fill:#ffffff;stroke-width:0.264583"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:Century;-inkscape-font-specification:Century;fill:#ffffff"
+   id="tspan850-3">EY</tspan>-<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook';fill:#ffffff"
+   id="tspan852-1">dev</tspan></tspan></text>
+        <rect
+           style="fill:#ffffff;stroke-width:0.669138;stroke-opacity:0"
+           id="rect854-6"
+           width="66.145836"
+           height="26.458334"
+           x="34.660412"
+           y="18.520834" />
+        <rect
+           y="47.625"
+           x="34.660408"
+           height="26.458334"
+           width="66.145836"
+           id="rect854-9-7"
+           style="fill:#ff2a2a;stroke-width:0.669141;stroke-opacity:0" />
+      </g>
+    </g>
+  </g>
+</svg>
