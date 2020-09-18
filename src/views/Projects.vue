@@ -72,6 +72,8 @@ export default {
     border-radius: 10px;
     color: var(--bg-dark);
     max-width: 800px;
+    transform: scale(0.1, 0.1);
+    transition: all 1.5s ease-in-out;
 }
 .active{
     opacity: 1!important;

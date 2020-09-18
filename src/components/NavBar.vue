@@ -57,11 +57,12 @@
                 </g>
             </svg>
         </div>
-        <ul>
+        <ul :class="{'extended' : showUpdateUI}">
             <li><a href="/#home">Home</a></li>
             <li><a href="/#Experience">Experience</a></li>
             <li><a href="/#Advantages">Advantages</a></li>
             <li><v-btn href="/#Contact" color="#27debf" class="btn-contact" rounded>Contact</v-btn></li>
+            <li v-if="showUpdateUI"><v-btn color="#f44336" class="btn-contact" rounded dark style="margin: auto" @click="accept">Update</v-btn></li>
         </ul>
         <hamburger-btn @open-nav="openMenu"/>
     </nav>
@@ -76,7 +77,8 @@ export default {
     },
     data: () => ({
         menu:null,
-        rect_menu: null
+        rect_menu: null,
+        showUpdateUI: false
     }),
     methods:{
         openMenu(){
@@ -108,7 +110,7 @@ export default {
             else{
                 document.querySelector('.bottom').classList.remove('bottom-show')
             }
-            if (document.documentElement.scrollTop > window.innerHeight+150) {
+            if (document.documentElement.scrollTop > window.innerHeight+window.innerHeight/2) {
                 document.querySelector('.advantages h2').classList.add('active');
                 document.querySelector('.phone-pic').classList.add('active')
             }
@@ -116,13 +118,17 @@ export default {
                 document.querySelector('.advantages h2').classList.remove('active')
                 document.querySelector('.phone-pic').classList.remove('active')
             }
-            if (document.documentElement.scrollTop > 2*window.innerHeight-150) {
+            if (document.documentElement.scrollTop > 2*window.innerHeight-window.innerHeight/2) {
                 document.querySelector('.advantages ul').classList.add('active');
             }
             else{
                 document.querySelector('.advantages ul').classList.remove('active')
             }
 
+        },
+        async accept() {
+            this.showUpdateUI = false;
+            await this.$workbox.messageSW({ type: "SKIP_WAITING" });
         }
     },
     mounted() {
@@ -140,6 +146,11 @@ export default {
     },
     created () {
         window.addEventListener('scroll', this.handleScroll);
+        if (this.$workbox) {
+            this.$workbox.addEventListener("waiting", () => {
+                this.showUpdateUI = true;
+            });
+        }
     },
     destroyed () {
         window.removeEventListener('scroll', this.handleScroll);
@@ -196,6 +207,7 @@ li a:hover{
 }
 
 .navigations ul{
+    flex: 2!important;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -205,6 +217,9 @@ li a:hover{
     transition: all 1s ease-in-out;
     max-width: 500px;
     height: 36px;
+}
+.extended{
+    max-width: 600px!important;
 }
 .navigations ul li{
     height: 100%;
@@ -221,18 +236,23 @@ li a:hover{
     max-width: 100px;
 }
 @media only screen and (max-width: 1250px){
+
     .navigations ul li{
         font-size: 1rem;
     }
 }
 @media only screen and (max-width: 850px){
+    .extended{
+        max-width: 100%!important;
+    }
     .navigations ul{
         height: unset;
         max-width: unset;
         flex: unset;
         position: absolute;
-        top:-274px;
+        top:0;
         left:0;
+        transform: translate(0, -100%);
         width: 100%;
         display: unset;
         margin: 0;
@@ -240,7 +260,7 @@ li a:hover{
         padding: 50px 0 0;
     }
     .navigations .active{
-        top:0;
+        transform: translate(0, 0);
     }
     li a{
         display: block;

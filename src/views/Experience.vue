@@ -31,14 +31,6 @@ export default {
         image : '',
         projects: [
             {
-                title: 'Elegant CRM',
-                subtitle : 'Construction company',
-                img: require('../assets/projects/elegant-intro.png'),
-                description : ['We designed database and API for frontend', 'Using Creative Tim template, we created a frontend'],
-                link: 'https://crm.elegantenterprisesinc.com/#/login',
-                open:  null,
-            },
-            {
                 title: 'Art resume',
                 subtitle : 'Site portfolio for ART',
                 img: require('../assets/projects/art-intro.png'),
@@ -50,9 +42,17 @@ export default {
                 title: 'Web developer resume',
                 subtitle : 'Site portfolio for web developer',
                 img: require('../assets/projects/programmer-intro.png'),
-                description : ['Fully custom progressive web application', 'Check it out for more information about us'],
+                description : ['Fully custom progressive web application', 'For more information about us, check link below'],
                 link: 'https://ey-dev.github.io/my-page/#/',
                 open:  require('../assets/projects/Dev-resume.png'),
+            },
+            {
+                title: 'Elegant CRM',
+                subtitle : 'Construction company',
+                img: require('../assets/projects/elegant-intro.png'),
+                description : ['We designed database and API for frontend', 'Using Creative Tim template, we created a frontend'],
+                link: 'https://crm.elegantenterprisesinc.com/#/login',
+                open:   require('../assets/projects/elegant-crm.png'),
             },
         ],
         overlay :false,

@@ -13,7 +13,7 @@
 
             <v-card-actions>
                 <v-btn v-if="project.open!=null" :small="$vuetify.breakpoint.xsOnly" color="#37474f" rounded dark @click="openProject">
-                    open
+                    card
                 </v-btn>
                 <v-btn :small="$vuetify.breakpoint.xsOnly" color="#37474f" text :href="project.link" dark >
                     Link
